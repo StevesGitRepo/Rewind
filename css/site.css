@@ -6,6 +6,7 @@
   --silver-color: rgb(122, 143, 161);
   --logoBlue-color: rgb(125, 100, 250);
   --sinovaBlue-color: rgb(19, 205, 232);
+  --rewindRed-color: #ff0026;
 }
 
 body {
@@ -64,12 +65,12 @@ footer .social > a:hover {
 }
 
 .checklist > li i {
-  color: var(--logoBlue-color);
+  color: var(--rewindRed-color);
 }
 
 .checklistText {
   color: var(--primary-color);
-}   
+}
 
 code[class*='language-'],
 pre[class*='language-'] {
@@ -81,4 +82,18 @@ pre[class*='language-'] {
 main > .container {
   padding: 60px 15px 0;
   margin-bottom: 5rem;
+}
+
+.logoBrand {
+  font-family: 'Permanent Marker', cursive;
+  color: var(--rewindRed-color);
+}
+
+.button {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  color: var(--rewindRed-color);
+  /* border: 2px; */
+  /* border-radius: 5; */
+  border-color: var(--rewindRed-color);
 }

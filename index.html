@@ -26,6 +26,13 @@
 
     <link href="css/site.css" rel="stylesheet" />
     <link href="css/prism.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="d-flex flex-column h-100">
@@ -33,7 +40,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"
+        <a class="navbar-brand logoBrand" href="index.html"
           ><img
             src="/img/LogoGradientCircled.png"
             width="30"
@@ -92,7 +99,7 @@
         <div class="row g-5 mt-lg-1 py-5 row-cols-1 row-cols-lg-2">
           <div class="col order-last order-lg-first">
             <h1 class="display-5 fw-bold lh-1 mb-3">
-              REWIND: A Coding Project
+              <span class="logoBrand">REWIND:</span> A Coding Project
             </h1>
             <h4 class="lead">
               One step at a time, one loop at a time. A Javascript coding
@@ -129,11 +136,8 @@
                 >Javascript Boolean Logic
               </li>
             </ul>
-            <a
-              type="button"
-              class="btn btn-outline-dark btn-lg px-4 me-md-2"
-              href="app.html"
-            >
+            <!-- class="btn btn-outline-dark btn-lg px-4 me-md-2" -->
+            <a type="button" class="button" href="app.html">
               <strong>Try It Out!</strong>
             </a>
             <h5 class="fw-bold mt-5">
@@ -159,7 +163,7 @@
             <img
               src="img/Rewind Logo.png"
               class="img-fluid center-block d-block mx-auto"
-              alt="100 Steps Logo"
+              alt="Rewind Logo"
               width="500"
               height="500"
             />
