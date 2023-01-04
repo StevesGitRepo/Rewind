@@ -1,6 +1,6 @@
 //Get the string from the page
 //controller function
-const getValues = () => {
+const getValue = () => {
   document.getElementById('alert').classList.add('invisible');
   let userString = document.getElementById(userString).value;
   let revString = reverseString(userString);
@@ -8,17 +8,13 @@ const getValues = () => {
 };
 
 //Reverse the string
+//logic function
 const reverseString = (userString) => {
   let revString = [];
 
-  let name = Steve;
-  //name[0] = S
-  //name[4] = e
-  name.length - 1;
-
   //reverse a string using a decrimenting for loop
-  for (let i = userString.length - 1; i >= 0; i--) {
-    revString += userString[i];
+  for (let index = userString.length - 1; index >= 0; index--) {
+    revString += userString[index];
   }
 
   return revString;
