@@ -7,6 +7,11 @@
   --logoBlue-color: rgb(125, 100, 250);
   --sinovaBlue-color: rgb(19, 205, 232);
   --rewindRed-color: #ff0026;
+  --beige-color: rgb(255, 242, 187);
+}
+
+.main {
+  background-color: var(--beige-color);
 }
 
 body {

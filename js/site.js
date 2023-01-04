@@ -1,20 +1,36 @@
-// Call Hello World
-function helloWorld() {
-  alert('Hello World');
-}
+//Get the string from the page
+//controller function
+const getValues = () => {
+  document.getElementById('alert').classList.add('invisible');
+  let userString = document.getElementById(userString).value;
+  let revString = reverseString(userString);
+  displayString(revString);
+};
 
-let first = 'Steve';
-let last = 'Szymanski';
-let msg = `Hello + ${first} ${last}`;
+//Reverse the string
+const reverseString = (userString) => {
+  let revString = [];
 
-console.log(msg);
+  let name = Steve;
+  //name[0] = S
+  //name[4] = e
+  name.length - 1;
 
-let city = 'Phoenix';
-let state = 'AZ';
-let location = `You are in ${city}, ${state}`;
-console.log(location);
+  //reverse a string using a decrimenting for loop
+  for (let i = userString.length - 1; i >= 0; i--) {
+    revString += userString[i];
+  }
 
-let name = 'Steve Szymanski';
+  return revString;
+};
 
-name.substring(6,9) // "Szym"
-name.substring(8,11) //"yman"
+//Display the message back to the user
+//View function
+const displayString = (revString) => {
+  //write to the page
+  document.getElementById(
+    'msg'
+  ).innerHTML = `Your reversed string is: ${revString}`;
+  //show the alert box
+  document.getElementById('alert').classList.remove('invisible');
+};
