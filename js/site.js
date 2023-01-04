@@ -2,7 +2,7 @@
 //controller function
 const getValue = () => {
   document.getElementById('alert').classList.add('invisible');
-  let userString = document.getElementById(userString).value;
+  let userString = document.getElementById('userString').value;
   let revString = reverseString(userString);
   displayString(revString);
 };
@@ -12,7 +12,7 @@ const getValue = () => {
 const reverseString = (userString) => {
   let revString = [];
 
-  //reverse a string using a decrimenting for loop
+  //reverse a string using a decrementing for loop
   for (let index = userString.length - 1; index >= 0; index--) {
     revString += userString[index];
   }

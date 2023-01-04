@@ -102,11 +102,8 @@
             </h4>
           </div>
           <div class="col">
-            <div class="row border-1 border-bottom border-danger">
-              <div class="col-2 col-lg-1 mb-2 d-flex justify-items-start">
-                <img src="img/RewindLogoFinNoText.png" width="50" />
-              </div>
-              <div class="col-10 col-lg-11 mt-2">
+            <div class="border-1 border-bottom border-danger">
+              <div class="mt-2">
                 <h5 class="">Enter A String To Reverse</h5>
               </div>
             </div>
@@ -116,29 +113,34 @@
                   id="userString"
                   type="text"
                   class="form-control"
+                  maxlength="50"
                   placeholder="Enter A String"
                   aria-label="Enter A String"
                 />
               </div>
               <div class="col-12">
-                <button type="button" id="btnSubmit" class="btn btn-danger">
+                <!-- <button type="button" id="btnSubmit" class="btn btn-danger">
                   Reverse It!
-                </button>
+                </button> -->
                 <!-- submit type will not execute javascript -->
-                <!-- <a type="button" id="btnSubmit" class="button"> Reverse It! </a> -->
+                <a type="button" id="btnSubmit" class="button"> Reverse It! </a>
               </div>
               <div
-                class="alert alert-danger mt-5 invisible fade show"
+                class="row alert alert-light mt-5 ms-1 invisible fade show border-1 border-danger"
                 id="alert"
                 role="alert"
               >
-                <h4 class="alert-heading">
-                  Well done, your string is reversed!
-                </h4>
+                <h1
+                  class="col-9 alert-heading logoBrand d-flex align-items-center"
+                >
+                  Well done!
+                </h1>
+                <img
+                  class="col-3 d-flex justify-content-end w-25 pb-3"
+                  src="img/RewindLogoFinNoText.png"
+                />
                 <hr />
-                <p class="mb-0" id="msg">
-                  <!-- insert a message here -->
-                </p>
+                <p class="mb-0" id="msg"></p>
               </div>
             </form>
           </div>
@@ -199,7 +201,7 @@
     ></script>
     <script src="/js/site.js"></script>
     <script>
-      document.getElementById('btnSubmit').addEventListener('c0lick', getValue);
+      document.getElementById('btnSubmit').addEventListener('click', getValue);
     </script>
   </body>
 </html>

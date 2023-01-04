@@ -35,7 +35,7 @@
     />
   </head>
 
-  <body class="d-flex flex-column h-100">
+  <body class="d-flex flex-column h-100 main">
     <!-- ==== Nav Section ==== -->
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -92,7 +92,7 @@
 
     <!-- ==== Main Section ==== -->
 
-    <main class="flex-shrink-0 main">
+    <main class="flex-shrink-0">
       <div class="container py-5 px-5 mt-5">
         <h2 class="border-1 border-bottom border-dark">
           The Code for <span class="logoBrand">REWIND</span>
@@ -100,19 +100,68 @@
         <div class="row row-cols-1 row-cols-lg-2">
           <div class="col-lg-8">
             <pre class="line-numbers"><code class="language-javascript">
-                    // Call Hello World
-function helloWorld() {
-  alert('Hello World');
-}
+  //Get the string from the page
+  //controller function
+  const getValue = () => {
+    document.getElementById('alert').classList.add('invisible');
+    let userString = document.getElementById('userString').value;
+    let revString = reverseString(userString);
+    displayString(revString);
+  };
+
+  //Reverse the string
+  //logic function
+  const reverseString = (userString) => {
+    let revString = [];
+
+    //reverse a string using a decrementing for loop
+    for (let index = userString.length - 1; index >= 0; index--) {
+      revString += userString[index];
+    }
+
+    return revString;
+  };
+
+  //Display the message back to the user
+  //View function
+  const displayString = (revString) => {
+    //write to the page
+    document.getElementById(
+      'msg'
+    ).innerHTML = `Your reversed string is: ${revString}`;
+    //show the alert box
+    document.getElementById('alert').classList.remove('invisible');
+  };
+
+
                 </code>
             </pre>
           </div>
           <div class="col-lg-4">
-            <p>The Code is structured in one function.</p>
-            <h5>Hello World</h5>
+            <p>REWIND is structured into three Javascript functions.</p>
+            <h5>getValue</h5>
             <p>
-              Hello World is a function that displays an alert with a message of
-              "Hello World".
+              The first function, "getValue" pulls the entered string from the
+              page and acts as the controller function. The function manipulates
+              the Document Object Model (DOM) by taking in the 'alert' and
+              'invisible' attributes. The "userString" and "revString" variables
+              are declared in this function.
+            </p>
+            <h5>reverseString</h5>
+            <p>
+              The "reverseString" function contains the app's logic and reverses
+              the user's inputted string. The "revString" variable declares an
+              empty array. A decrementing for loop begins the index count at the
+              end of the string by assigning the start point with
+              "userSTring.length - 1". The indices are walked through in reverse
+              one at a time with "i--".
+            </p>
+            <h5>displayString</h5>
+            <p>
+              The "displayString" function displays the result of the completed
+              function. The reversed string (revString), 'alert' and 'invisible'
+              attributes are all called to display on the page with the button
+              click.
             </p>
           </div>
         </div>

@@ -12,6 +12,7 @@
 
 .main {
   background-color: var(--beige-color);
+  height: 100%;
 }
 
 body {
@@ -105,4 +106,8 @@ main > .container {
 
 .footerContact {
   font-size: small;
+}
+
+.results {
+  font-weight: 500;
 }
