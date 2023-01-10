@@ -1,3 +1,6 @@
+
+![RewindLogoFinNoText](https://user-images.githubusercontent.com/104333881/211467925-54350db8-5123-418d-8bb0-f39ae762613d.png)
+
 Play it forward and reverse! Rewind is a Javascript coding exercise using arrays. Write a program that displays a string in reverse.
 
 REWIND is structured into three Javascript functions.
